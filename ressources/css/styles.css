@@ -103,7 +103,6 @@ h2:after {
     text-decoration: none;
     border-radius: 200px;
     transition: background-color 0.4s, border 0.4s, color 0.4s;
-    margin-bottom:20px;
 }
 
 .btn-full:link,
@@ -153,8 +152,6 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: auto;
-
 }
 
 .logo {
@@ -191,33 +188,27 @@ header {
     border-bottom: 2px solid #990026;
 }
 
-/* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.main-nav li.icon {display: none;}
+/* ------------------------------------*/
+/* HEADER PART */
+/* ------------------------------------*/
 
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:780px) {
-  ul.main-nav li:not(:first-child) {display: none;}
-  ul.main-nav li.icon {
-    float: right;
-    display: inline-block;
-  }
+.tools-showcase {
+    list-style: none;
+    width: 100%;
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:780px) {
-  ul.main-nav.responsive {position: relative;}
-  ul.main-nav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-
-  }
-  ul.main-nav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.main-nav.responsive li a {
+.tools-showcase li {
     display: block;
-    text-align: left;
-  }
+    float: left;
+    width: 25%;
+}
+
+.tool-photo {
+    width: 100%;
+    margin: 0;
+}
+
+.tool-photo img {
+    width: 100%;
+    height: auto;
 }
